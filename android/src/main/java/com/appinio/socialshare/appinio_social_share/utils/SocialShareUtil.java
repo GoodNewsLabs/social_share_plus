@@ -60,8 +60,12 @@ public class SocialShareUtil {
     private final String FACEBOOK_MESSENGER_LITE_PACKAGE = "com.facebook.mlite";
     private final String SMS_DEFAULT_APPLICATION = "sms_default_application";
     private final String LINKEDIN_PACKAGE = "com.linkedin.android";
+    private final String WECHAT_PACKAGE = "com.tencent.mm";
     private final String LINKEDIN_FEED_PACKAGE = "com.linkedin.android.publishing.sharing.SharingDeepLinkActivity";
     private final String LINKEDIN_MESSAGE_PACKAGE = "com.linkedin.android.publishing.sharing.MessagingDeepLinkActivity";
+
+    private final String WECHAT_FEED_PACKAGE = "com.tencent.mm.ui.chatting.ChattingUI";
+    private final String WECHAT_MESSAGE_PACKAGE = "com.tencent.mm.ui.chatting.ChattingUIEx";
 
 
     private static CallbackManager callbackManager;
@@ -495,7 +499,7 @@ public class SocialShareUtil {
         appsMap.put("twitter", TWITTER_PACKAGE);
         appsMap.put("tiktok", TIKTOK_PACKAGE);
         appsMap.put("linkedin", LINKEDIN_PACKAGE);
-
+        appsMap.put("wechat", WECHAT_PACKAGE);
         Map<String, Boolean> apps = new HashMap<String, Boolean>();
 
         PackageManager pm = context.getPackageManager();
@@ -505,7 +509,7 @@ public class SocialShareUtil {
         intent.setData(Uri.parse("sms:"));
         List<ResolveInfo> resolvedActivities = pm.queryIntentActivities(intent, 0);
         apps.put("message", !resolvedActivities.isEmpty());
-        String[] appNames = {"instagram", "facebook_stories", "whatsapp", "telegram", "messenger", "facebook", "facebook-lite", "messenger-lite", "instagram_stories", "twitter", "tiktok", "linkedin"};
+        String[] appNames = {"instagram", "facebook_stories", "whatsapp", "telegram", "messenger", "facebook", "facebook-lite", "messenger-lite", "instagram_stories", "twitter", "tiktok", "linkedin", "wechat"};
 
         for (int i = 0; i < appNames.length; i++) {
             try {
