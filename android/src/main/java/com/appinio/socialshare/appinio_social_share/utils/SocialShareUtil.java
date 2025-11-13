@@ -1,5 +1,4 @@
-package android.src.main.java.com.appinio.socialshare.appinio_social_share.utils;
-
+package com.appinio.socialshare.appinio_social_share.utils;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;

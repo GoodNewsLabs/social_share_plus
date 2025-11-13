@@ -1,4 +1,4 @@
-package android.src.main.java.com.appinio.socialshare.appinio_social_share.utils;
+package com.appinio.socialshare.appinio_social_share.utils;
 
 import androidx.core.content.FileProvider;
 

@@ -1,4 +1,4 @@
-package android.src.main.java.com.appinio.socialshare.appinio_social_share;
+package com.appinio.socialshare.appinio_social_share;
 
 import android.app.Activity;
 import android.content.Context;
