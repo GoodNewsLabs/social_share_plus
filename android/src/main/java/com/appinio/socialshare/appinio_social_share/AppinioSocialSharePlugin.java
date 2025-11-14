@@ -1,5 +1,4 @@
 package com.appinio.socialshare.appinio_social_share;
-
 import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
