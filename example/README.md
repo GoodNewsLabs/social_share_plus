@@ -1,6 +1,6 @@
-# appinio_social_share_example
+# example_new
 
-Demonstrates how to use the appinio_social_share plugin.
+A new Flutter project.
 
 ## Getting Started
 
